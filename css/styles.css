@@ -1,0 +1,459 @@
+body {
+  font-family: "Montserratk", sans-serif;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+#title {
+  background-color: #ffa823;
+  color: black;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bolder;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  color: #8f8f8f;
+  font-weight: 500;
+}
+
+i {
+  padding: 1%;
+}
+
+/*navigation bar*/
+.navbar {
+  padding: 0 0 4.5rem 0;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.nav-item {
+  padding: 0 18px;
+  position: relative;
+  left: 15%;
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: light;
+}
+
+/*button*/
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/*title image*/
+
+.title-image {
+  width: 70%;
+  /* transform: rotate(25deg); */
+  position: absolute;
+  right: 5%;
+}
+
+/*Features section*/
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.features-row {
+  text-align: center;
+}
+
+.featured-container {
+}
+
+.featured-logo {
+  color: #ffbf61;
+  font-size: 4rem;
+}
+
+.featured-p {
+  padding: 0 5%;
+}
+
+/*hover*/
+
+.featured-logo:hover {
+  color: #ffa823;
+}
+
+/*Testimonial section*/
+
+#testimonials {
+  text-align: center;
+  background-color: #ffbf61;
+  color: #fff;
+}
+
+/*Testimonial section*/
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+#press {
+  background-color: #ffbf61;
+  padding: 3%;
+  text-align: center;
+}
+
+.press-logo {
+  width: 7%;
+  margin: 20px;
+}
+
+/*price section**/
+
+#pricing {
+  padding: 7% 15%;
+}
+
+.pricing-coloum {
+  padding: 3% 2%;
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Allow the card to take the full height of the column */
+}
+.card-body {
+  flex-grow: 1; /* Allow the card body to grow and take up available space */
+}
+.equal-height {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out the items evenly */
+}
+
+/*cta section*/
+
+#cta {
+  background-color: #fff;
+  text-align: center;
+}
+
+.cta-h1 {
+  color: #343a40;
+}
+
+.cta-container {
+  padding: 7% 15%;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: #8f8f8f;
+}
+
+@media (max-width: 1028px) {
+  .title-image {
+    position: static;
+    transform: rotate(0deg);
+  }
+
+  #title {
+    text-align: center;
+  }
+}
+
+/*Work Experience/Timeline*/
+body {
+  background-color: #f8f9fa; /* Light background for contrast */
+}
+
+#work-experience {
+  background-color: rgb(52, 58, 64);
+  color: white; /* Text color for contrast */
+  padding: 50px 0;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #ffa823; /* Accent color for headings */
+}
+
+.timeline-item h4 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #f8f9fa; /* Light color for subheadings */
+}
+
+.timeline-item p {
+  color: #f8f9fa; /* Light text for descriptions */
+}
+
+.timeline-item ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.timeline-item ul li {
+  color: #f8f9fa; /* Light text for list items */
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 14%;
+  height: 100%;
+  border-left: 4px solid #ffa823; /* Timeline line */
+  top: 0;
+}
+
+/* Dots for timeline */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -10px; /* Position the dot to the left of the item */
+  top: 20px; /* Center the dot vertically */
+  width: 20px; /* Dot size */
+  height: 20px; /* Dot size */
+  border-radius: 50%; /* Make it a circle */
+  background-color: #ffa823; /* Dot color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+}
+
+.timeline-item {
+  position: relative;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+}
+
+.timeline-item:nth-child(odd) {
+  margin-left: 0%; /* Adjust position for odd items */
+}
+
+.timeline-item:nth-child(even) {
+  margin-right: 0%; /* Adjust position for even items */
+}
+
+/*Project-Showcase*/
+#projects {
+  padding: 50px 20px;
+  background-color: rgb(52, 58, 64);
+  color: white;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#projects p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #a86500;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.project-card {
+  background-color: #ffa823;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  max-height: 40rem;
+  max-width: 20rem;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 15px;
+}
+
+.project-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.btn-view {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(52, 58, 64);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-view:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(52, 58, 64);
+}
+
+.organization {
+  font-size: 0.2rem;
+  color: #333; /* or any contrasting color to stand out */
+  margin-bottom: 5px;
+}
+
+/*Gallery*/
+
+/* Section Styling */
+#gallery {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+#gallery h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* Gallery Container Styling */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Gallery Item Styling */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Hover Effect */
+.gallery-item:hover img {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Gallery styling remains the same */
+
+.gallery-item img {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/* Lightbox Styling */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content {
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto;
+  display: block;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
